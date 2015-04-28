@@ -3,6 +3,8 @@ package com.qianfeng.sharetest;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,12 +17,11 @@ import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.PlatformActionListener;
 import cn.sharesdk.framework.ShareSDK;
 import cn.sharesdk.onekeyshare.OnekeyShare;
+import cn.sharesdk.sina.weibo.SinaWeibo;
 import cn.sharesdk.tencent.qq.QQ;
 import m.framework.utils.UIHandler;
 
-/**
- * 陈仙如修改了！
- */
+
 public class MainActivity extends ActionBarActivity implements View.OnClickListener, PlatformActionListener {
 
     private TextView text;
@@ -72,7 +73,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.text:
-                showShare();
+//                showShare();
                 authorize();
                 break;
         }
