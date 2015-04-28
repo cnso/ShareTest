@@ -24,6 +24,10 @@ import m.framework.utils.UIHandler;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener, PlatformActionListener {
 
+
+
+
+
     private TextView text;
 
     @Override
